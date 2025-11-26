@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* gradient background */
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 15px;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background-color: #fff;
+  animation: fadeIn 0.6s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.container input[type="text"],
+.container input[type="number"],
+.container select,
+.container textarea,
+.container input[type="file"] {
+  font-size: 15px;         
+  padding: 12px;           
+  width: 100%;             
+  margin-bottom: 15px;     
+  border: 1px solid #ccc;  
+  border-radius: 8px;      
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.container input:focus,
+.container textarea:focus,
+.container select:focus {
+  border-color: #4285f4;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(66,133,244,0.5);
+}
+
+.btn-sell {
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 150px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-sell:hover {
+  background: linear-gradient(135deg, #df1d20, #f4a742);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,248 @@
+
+.seller-profile-container {
+    margin-top: 10%; 
+    display: flex;
+    gap: 25px;
+    max-width: 1400px; 
+}
+
+.seller-unified-card {
+    margin-top: 0; 
+    background: linear-gradient(135deg, #b3e09f 0%, #70b6e1 100%);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.seller-left-column {
+    flex: 0 0 30%; 
+}
+
+.seller-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 20px;
+}
+
+.seller-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.seller-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.seller-details h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.seller-location {
+    font-size: 14px;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+}
+
+.seller-location::before {
+    content: "";
+    margin-right: 5px;
+}
+
+
+.rating-section {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.rating-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.rating-section h3::before {
+    content: "⭐";
+    margin-right: 8px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.rating-label {
+    width: 40px;
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.rating-bar {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.rating-bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, #ffce3e, #f39c12);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.rating-count {
+    width: 25px;
+    text-align: right;
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.feedback-section {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.feedback-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-section h3::before {
+    content: "📝";
+    margin-right: 8px;
+}
+
+.feedback-row {
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.feedback-row:last-child {
+    border-bottom: none;
+}
+
+.feedback-row p:first-child {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.feedback-row p:last-child {
+    color: #34495e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.feedback-btn,
+.report-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.feedback-btn {
+    background-color: #2ecc71;
+}
+
+.feedback-btn:hover {
+    background-color: #27ae60;
+}
+
+.report-btn {
+    background-color: #e74c3c;
+}
+
+.report-btn:hover {
+    background-color: #c0392b;
+}
+
+
+.seller-right-column {
+    flex: 0 0 70%;
+}
+
+.seller-right-column h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.seller-right-column h3::before {
+    content: "📚";
+    margin-right: 10px;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .seller-profile-container {
+        flex-direction: column;
+    }
+
+    .seller-left-column,
+    .seller-right-column {
+        flex: 0 0 100%;
+    }
+}

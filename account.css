@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    margin-top: 4%;
+}
+
+
+.sidebar {
+    position: fixed;               
+    margin-top: 3px;                        
+    left: 0;                       
+    width: 280px;
+    height: 100vh;                 
+    background: linear-gradient(90deg,rgb(135, 152, 129), rgb(159, 164, 121));
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;            
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #444;
+    margin-bottom: 15px;
+}
+
+.profile-section h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.profile-section p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+
+.account-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.account-actions .btn {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.account-actions .btn:hover {
+    opacity: 0.85;
+}
+
+.account-actions .logout {
+    background: #dc3545;
+}
+
+.account-actions .btn:not(.logout) {
+    background: #007bff;
+}
+
+.main-content {
+    margin-left: 280px;           
+    flex: 1;
+    padding: 40px 30px;
+    overflow-y: auto;
+}
+
+/* Books Grid */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+
+.no-books {
+    text-align: center;
+    color: #777;
+    font-size: 15px;
+}
+
+
+.card {
+  width: 300px;
+  height: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px; 
+  background: #fff;   
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);transform: translateY(-15px);   
+}
+
+  .card-itm{
+  padding: 16px;
+}
+.card-itm img{
+  width:100%;
+  height: 300px;
+  
+}
+.card-itm p{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2 ; 
+   -webkit-box-orient: vertical;
+
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card-btn {
+  flex: 1;
+  padding: 10px 15px;
+  background-color:rgb(192, 163, 125); 
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-btn:hover{
+    
+  background-color: #b30000; /* darker blue */
+  transform: scale(1.05);    /* slight zoom */
+  
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

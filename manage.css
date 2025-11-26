@@ -1,0 +1,109 @@
+
+.my-books {
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.my-books table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    /* overflow: hidden; */
+}
+
+.my-books thead {
+    background:rgb(192, 163, 125);
+    color: #0b0a0a;
+}
+
+.my-books thead th {
+    padding: 14px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.my-books tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #333;
+}
+
+.my-books tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.my-books tbody tr:hover {
+    background: #eef4fc;
+}
+
+.my-books tbody img {
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.my-books td a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 1px solid #4a90e2;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.my-books td a:hover {
+    background: #4a90e2;
+    color: #fff;
+}
+
+.my-books select {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.my-books select:focus {
+    border-color: rgb(129, 134, 229);
+    outline: none;
+    box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+.my-books select option {
+    padding: 6px;
+}
+
+.my-books button {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.my-books button:hover {
+    background: #357ab7;
+    transform: translateY(-2px);
+}
+
+
+.status-container{
+  
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 22px;
+    color: #444;
+    border-left: 5px solid rgb(192, 163, 125);
+    padding-left: 10px;
+
+}

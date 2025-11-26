@@ -1,0 +1,132 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;        
+  padding: 20px 50px;  
+  background: rgb(192, 163, 125);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  overflow: hidden;
+  border-radius: 0;    
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg,rgb(168, 168, 229), #3ca771, #34c759, #ffd700);
+  background-size: 200% 100%;
+  animation: switchGlow 5s linear infinite;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes switchGlow {
+  0% { transform: translateX(0%); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(0%); }
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  user-select: none;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 15px #ffd700, 0 0 25px #34c759;
+}
+
+.navbar a{
+  color:black;
+  text-decoration: none;
+  margin-left: 40px;
+  position: relative;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+
+.navbar a:hover {
+  color: #116A3E;
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #34c759;
+  transform: scale(1.05);
+}
+
+.srcbr {
+  width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.srcbr:focus {
+  border-color: #116A3E;
+ ?
+  transform: scale(1.03);
+}
+
+.srccontainer {
+  position: relative;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.srccontainer input[type="submit"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #116A3E;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.srccontainer input[type="submit"]:hover {
+  background: #34c759;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #34c759, 0 0 20px #eadfa3;
+}
+
+
+.navbar a[href*="logout"] {
+  background: #e53935;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar a[href*="logout"]:hover {
+  background: #f44336;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #f44336, 0 0 25px #ffd700;
+}
