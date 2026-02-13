@@ -146,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['razorpay_payment_id'])
       
       const form = this;
       const options = {
-        key: "rzp_test_DaMIGBNSIymvRn",
+        key: "api key",
         amount: 2000,
         currency: "INR",
         name: "Booklin",
