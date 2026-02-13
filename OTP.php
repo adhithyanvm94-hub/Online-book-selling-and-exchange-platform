@@ -24,12 +24,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST")  {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'booklin205@gmail.com';       
-        $mail->Password   = 'jedw rstb uobh wejo';           
-        $mail->SMTPSecure = 'tls';
+        $mail->Username   = 'mail@gmail.com';       
+        $mail->Password   = 'pass';           
+        $mail->SMTPSecure = 'tlx';
         $mail->Port       = 587;
 
-        $mail->setFrom('booklin205@gmail.com', 'booklin');
+        $mail->setFrom('mail@gmail.com', 'booklin');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'Your OTP Code';
